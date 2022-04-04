@@ -1,7 +1,7 @@
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
- *
+relative
  * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
@@ -13,3 +13,123 @@
  *= require_tree .
  *= require_self
  */
+ 
+ *{
+    margin-left: 10px;
+   }
+    
+   body {
+       background-color: #b1b1b1;
+   }
+   
+   .itens{
+       margin: 20px;
+       text-align-last:center;
+       color: #747419;
+   }
+   
+   .matriz{
+       background-color: #e7e7e7;
+       border-color: #747419;
+       border-width: 2px;
+       border-radius: 5px;
+       border-style: solid;
+       height: 120px;
+       margin-top: -20px;
+       margin: 10px;
+       width: 800px;
+   }
+   
+   .categoria{
+       position: relative;
+       top: -68px;
+       left: 15px;
+   }
+   
+   .data_conclusao{
+       position: relative;
+       left: 15px;
+       top: -10px;
+   }
+   
+   .status{
+       width: 150px;
+       text-align: center;
+       position:relative;
+       float: right;
+       right: 20px;
+       top: -102px;
+       background-color: #e7e761;
+       border-color: #747419;
+       border-radius: 5px;
+       border-style: solid; 
+       border-width: 1px;
+   }
+   
+   .nome_evento{
+       position: relative;
+       top: 70px;
+       left: 15px;
+   }
+
+   .box_cat_form{
+    position: relative;
+    float: right;
+    top: -40px;
+    right: 36px;
+   }
+
+   #iten_categoria_saúde{
+    position: relative;
+    left: -10px;
+   }
+
+   #iten_categoria_lazer{
+    position: relative;
+    left: -10px;
+   }
+
+   #iten_categoria_financeiro{
+    position: relative;
+    left: -10px;
+   }
+
+   #iten_categoria_estudo{
+    position: relative;
+    left: -10px;
+   }
+
+   #iten_categoria_família{
+    position: relative;
+    left: -10px;
+   }
+
+   .data_concl_form{
+    position: relative;
+    top: 85px;
+    }
+
+    .box_status_form{
+    position: relative;
+    top: 50px;
+   }
+
+   .box_itens{
+       border: #747419;
+       background-color: #c5c590;
+       border-width: 2px;
+       border-radius: 5px;
+       border-style: solid;
+       width: 500px;
+       height: 330px;
+   }
+
+   .nome_itens_form{
+       position: relative;
+       top: 10px;
+   }
+
+   .button_itens{
+       position: relative;
+       top: 80px;
+   }

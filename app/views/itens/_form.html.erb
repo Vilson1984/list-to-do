@@ -1,7 +1,7 @@
 <%= form_with(model: iten) do |form| %>
   <% if iten.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(iten.errors.count, "error") %> prohibited this iten from being saved:</h2>
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
 
       <ul>
         <% iten.errors.each do |error| %>
@@ -10,28 +10,43 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
+<div class="box_itens">
+  <div class="nome_itens_form">
     <%= form.label :nome_evento, style: "display: block" %>
     <%= form.text_field :nome_evento %>
-  </div>
+  </div><br>
 
-  <div>
-    <%= form.label :data_conclusão, style: "display: block" %>
-    <%= form.text_field :data_conclusão %>
-  </div>
+  <div class="data_concl_form">
+    <%= form.label :data_conclusao, style: "display: block" %>
+    <%= form.date_field :data_conclusao %>
+  </div><br>
 
-  <div>
+  <div class="box_cat_form">
     <%= form.label :categoria, style: "display: block" %>
-    <%= form.text_field :categoria %>
-  </div>
+    
+    <%= form.label :categoria_saude, "Saúde" %>
+    <%= form.radio_button :categoria, "Saúde" %>
 
-  <div>
+    <%= form.label :categoria_lazer, "Lazer" %>
+    <%= form.radio_button :categoria, "Lazer" %>
+
+    <%= form.label :categoria_financeiro, "Financeiro" %>
+    <%= form.radio_button :categoria, "Financeiro" %>
+
+    <%= form.label :categoria_estudo, "Estudo" %>
+    <%= form.radio_button :categoria, "Estudo" %>
+  
+    <%= form.label :categoria_familia, "Família" %>
+    <%= form.radio_button :categoria, "Família" %>
+  </div><br>
+
+  <div class="box_status_form">
     <%= form.label :status, style: "display: block" %>
-    <%= form.text_field :status %>
-  </div>
+    <%= form.select :status, ["Feito", "Andamento", "A Fazer", "Cancelado"] %>
+  </div><br>
 
-  <div>
+  <div class="button_itens">
     <%= form.submit %>
   </div>
+</div>
 <% end %>
