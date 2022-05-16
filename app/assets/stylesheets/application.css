@@ -13,13 +13,24 @@ relative
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "static_pages";
  
  *{
-    margin-left: 10px;
+    margin-left: 2px;
    }
-    
+  
+  ul {
+    background-color: #747419;
+  }
+
+
+
    body {
        background-color: #b1b1b1;
+
    }
    
    .itens{
@@ -133,3 +144,47 @@ relative
        position: relative;
        top: 80px;
    }
+
+   $gray-medium-light: #EAEAEA;
+
+.post-card {
+  display: inline-block;
+}
+
+.post-legenda {
+  display: inline-block;
+  font-size: 10px;
+  color: gray;
+}
+
+.caption {
+  .legenda {
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid gray;
+  color: gray;
+  a {
+    color: gray;
+    /*It means: that a:hover */
+    :hover{
+      color: gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
